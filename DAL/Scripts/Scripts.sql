@@ -2,9 +2,10 @@ CREATE DATABASE Estudiantedb
 GO
 USE Estudiantedb
 GO
-CREATE TABLE Estudiante(
+CREATE TABLE Estudiante
+(
 
- EstudianteId int primary key identity(1,1),
+EstudianteId int primary key identity(1,1),
  Matricula varchar(9),
  Nombres varchar(15),
  Apellidos varchar(15),
@@ -16,4 +17,4 @@ CREATE TABLE Estudiante(
  Sexo varchar(7),
  Balance varchar(9),
 
-);
+)

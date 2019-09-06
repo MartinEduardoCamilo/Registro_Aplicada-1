@@ -108,28 +108,28 @@ namespace ResgistroDeEstudiantes.UI.Registros
                 paso = false;
             }
 
-            if (string.IsNullOrWhiteSpace(NombretextBox.Text)  && NombretextBox.Text == ("^[A-Za-z ]+$"))
+            if (string.IsNullOrWhiteSpace(NombretextBox.Text))
             {
                 MyErrorProvider.SetError(NombretextBox, "El campo nombre no debe estar vacio");
                 NombretextBox.Focus();
                 paso = false;
             }
 
-            if(string.IsNullOrWhiteSpace(ApellidotextBox.Text) && NombretextBox.Text == ("^[A-Za-z ]+$"))
+            if(string.IsNullOrWhiteSpace(ApellidotextBox.Text))
             {
                 MyErrorProvider.SetError(ApellidotextBox, "El campo no debe estar vacio");
                 ApellidotextBox.Focus();
                 paso = false;
             }
             
-            if(string.IsNullOrWhiteSpace(EmailtextBox.Text) && EmailtextBox.Text == ("\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*"))
+            if(string.IsNullOrWhiteSpace(EmailtextBox.Text))
             {
                 MyErrorProvider.SetError(EmailtextBox, "El Campo Email no debe estar Vacio");
                 EmailtextBox.Focus();
                 paso = false;
             }
 
-            if (string.IsNullOrWhiteSpace(BalancetextBox.Text) && BalancetextBox.Text ==("^[0-9]*[.][0-9]*$"))
+            if (string.IsNullOrWhiteSpace(BalancetextBox.Text))
             {
                 MyErrorProvider.SetError(BalancetextBox, "El balance Email no debe estar Vacio");
                 BalancetextBox.Focus();
@@ -198,7 +198,8 @@ namespace ResgistroDeEstudiantes.UI.Registros
             }
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+
+        private void Eliminarbutton_Click(object sender, EventArgs e)
         {
             MyErrorProvider.Clear();
             int id;
@@ -209,5 +210,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
             else
                 MyErrorProvider.SetError(IDnumericUpDown, "No se puede eliminar a un estudiante no existente");
         }
+
+        
     }
 }

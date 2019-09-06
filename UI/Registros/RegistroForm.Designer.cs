@@ -59,7 +59,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
             this.IDnumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.Nuevobutton = new System.Windows.Forms.Button();
             this.Guardarbutton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Eliminarbutton = new System.Windows.Forms.Button();
             this.MyErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -327,18 +327,18 @@ namespace ResgistroDeEstudiantes.UI.Registros
             this.Guardarbutton.UseVisualStyleBackColor = true;
             this.Guardarbutton.Click += new System.EventHandler(this.Guardarbutton_Click);
             // 
-            // button1
+            // Eliminarbutton
             // 
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(392, 461);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 63);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Eliminar";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.Eliminarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Eliminarbutton.Image")));
+            this.Eliminarbutton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Eliminarbutton.Location = new System.Drawing.Point(392, 461);
+            this.Eliminarbutton.Name = "Eliminarbutton";
+            this.Eliminarbutton.Size = new System.Drawing.Size(75, 63);
+            this.Eliminarbutton.TabIndex = 4;
+            this.Eliminarbutton.Text = "Eliminar";
+            this.Eliminarbutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Eliminarbutton.UseVisualStyleBackColor = true;
+            this.Eliminarbutton.Click += new System.EventHandler(this.Eliminarbutton_Click);
             // 
             // MyErrorProvider
             // 
@@ -349,7 +349,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(483, 536);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Eliminarbutton);
             this.Controls.Add(this.Guardarbutton);
             this.Controls.Add(this.Nuevobutton);
             this.Controls.Add(this.panel2);
@@ -366,7 +366,9 @@ namespace ResgistroDeEstudiantes.UI.Registros
 
         }
 
-       
+
+ 
+
         #endregion
 
         private System.Windows.Forms.Panel panel1;
@@ -395,7 +397,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
         private System.Windows.Forms.MaskedTextBox MatriculamaskedTextBox;
         private System.Windows.Forms.Button Nuevobutton;
         private System.Windows.Forms.Button Guardarbutton;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Eliminarbutton;
         private System.Windows.Forms.ErrorProvider MyErrorProvider;
         private System.Windows.Forms.ComboBox SexocomboBox;
     }
