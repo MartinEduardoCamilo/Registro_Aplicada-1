@@ -155,10 +155,10 @@ namespace ResgistroDeEstudiantes.UI.Registros
             estudiante = LLenaclase();
 
             if (IDnumericUpDown.Value == 0)
-                paso = EstudianteBLL.Guardar(estudiante);
+                paso = BLL.EstudianteBLL.Guardar(estudiante);
             else
             {
-                if (!ExiteBaseDato()) 
+                if (ExiteBaseDato()) 
                 {
                     MessageBox.Show("No se puede modificar un que estudiante exite", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;

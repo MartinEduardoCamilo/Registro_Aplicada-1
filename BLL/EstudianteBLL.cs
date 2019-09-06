@@ -35,19 +35,19 @@ namespace ResgistroDeEstudiantes.BLL
         public static bool Modificar(Estudiante estudiante)
         {
             bool paso = false;
-            Contexto db = new Contexto();
+            Contexto contexto = new Contexto();
             try
             {
-                db.Entry(estudiante).State = EntityState.Modified;
-                paso = (db.SaveChanges() > 0);
+                contexto.Entry(estudiante).State = EntityState.Modified;
+                if (contexto.SaveChanges()>0)
+                {
+                    paso = true;
+                }
+                contexto.Dispose();
             }
-            catch(Exception)
+            catch (Exception)
             {
                 throw;
-            }
-            finally
-            {
-                db.Dispose();
             }
             return paso;
         }
