@@ -45,6 +45,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
             this.Matriculalabel = new System.Windows.Forms.Label();
             this.IDlabel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.SexocomboBox = new System.Windows.Forms.ComboBox();
             this.Buscarbutton = new System.Windows.Forms.Button();
             this.BalancetextBox = new System.Windows.Forms.TextBox();
             this.FechaNacimientodateTimePicker = new System.Windows.Forms.DateTimePicker();
@@ -61,7 +62,6 @@ namespace ResgistroDeEstudiantes.UI.Registros
             this.Eliminarbutton = new System.Windows.Forms.Button();
             this.MyErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.entityCommand1 = new System.Data.Entity.Core.EntityClient.EntityCommand();
-            this.SexocomboBox = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IDnumericUpDown)).BeginInit();
@@ -204,6 +204,17 @@ namespace ResgistroDeEstudiantes.UI.Registros
             this.panel2.Size = new System.Drawing.Size(310, 411);
             this.panel2.TabIndex = 1;
             // 
+            // SexocomboBox
+            // 
+            this.SexocomboBox.FormattingEnabled = true;
+            this.SexocomboBox.Items.AddRange(new object[] {
+            "Mujer",
+            "Hombre"});
+            this.SexocomboBox.Location = new System.Drawing.Point(18, 331);
+            this.SexocomboBox.Name = "SexocomboBox";
+            this.SexocomboBox.Size = new System.Drawing.Size(227, 21);
+            this.SexocomboBox.TabIndex = 13;
+            // 
             // Buscarbutton
             // 
             this.Buscarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Buscarbutton.Image")));
@@ -341,17 +352,6 @@ namespace ResgistroDeEstudiantes.UI.Registros
             this.entityCommand1.Connection = null;
             this.entityCommand1.EnablePlanCaching = true;
             this.entityCommand1.Transaction = null;
-            // 
-            // SexocomboBox
-            // 
-            this.SexocomboBox.FormattingEnabled = true;
-            this.SexocomboBox.Items.AddRange(new object[] {
-            "Mujer",
-            "Hombre"});
-            this.SexocomboBox.Location = new System.Drawing.Point(18, 331);
-            this.SexocomboBox.Name = "SexocomboBox";
-            this.SexocomboBox.Size = new System.Drawing.Size(227, 21);
-            this.SexocomboBox.TabIndex = 13;
             // 
             // RegistroForm
             // 

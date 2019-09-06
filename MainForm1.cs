@@ -23,5 +23,15 @@ namespace ResgistroDeEstudiantes
             RegistroForm registro = new RegistroForm();
             registro.Show();
         }
+
+        private void RegistroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ConsultaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

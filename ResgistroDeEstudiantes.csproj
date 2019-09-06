@@ -79,6 +79,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Consultas\ConsultasFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Consultas\ConsultasFrom.Designer.cs">
+      <DependentUpon>ConsultasFrom.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Registros\RegistroForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UI\Consultas\ConsultasFrom.resx">
+      <DependentUpon>ConsultasFrom.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Registros\RegistroForm.resx">
       <DependentUpon>RegistroForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,12 +124,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="UI\Consultas\" />
+    <Folder Include="DAL\Scripts\" />
     <Folder Include="UI\Reportes\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DAL\Scripts\Scripts.sql" />
-    <Content Include="Resources\loupe_78956.png" />
     <Content Include="Resources\new_page_document_16676.png" />
     <Content Include="Resources\savetheapplication_guardar_2958.png" />
     <Content Include="Resources\vcsconflicting_93497.png" />

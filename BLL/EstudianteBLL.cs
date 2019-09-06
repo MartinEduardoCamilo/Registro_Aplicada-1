@@ -39,7 +39,7 @@ namespace ResgistroDeEstudiantes.BLL
             try
             {
                 contexto.Entry(estudiante).State = EntityState.Modified;
-                if (contexto.SaveChanges()>0)
+                if (contexto.SaveChanges() > 0)
                 {
                     paso = true;
                 }
