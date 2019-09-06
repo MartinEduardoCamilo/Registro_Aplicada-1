@@ -45,7 +45,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
             this.Matriculalabel = new System.Windows.Forms.Label();
             this.IDlabel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.SexotextBox = new System.Windows.Forms.TextBox();
+            this.SexocomboBox = new System.Windows.Forms.ComboBox();
             this.Buscarbutton = new System.Windows.Forms.Button();
             this.BalancetextBox = new System.Windows.Forms.TextBox();
             this.FechaNacimientodateTimePicker = new System.Windows.Forms.DateTimePicker();
@@ -186,7 +186,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.SexotextBox);
+            this.panel2.Controls.Add(this.SexocomboBox);
             this.panel2.Controls.Add(this.Buscarbutton);
             this.panel2.Controls.Add(this.BalancetextBox);
             this.panel2.Controls.Add(this.FechaNacimientodateTimePicker);
@@ -203,12 +203,16 @@ namespace ResgistroDeEstudiantes.UI.Registros
             this.panel2.Size = new System.Drawing.Size(310, 411);
             this.panel2.TabIndex = 1;
             // 
-            // SexotextBox
+            // SexocomboBox
             // 
-            this.SexotextBox.Location = new System.Drawing.Point(18, 332);
-            this.SexotextBox.Name = "SexotextBox";
-            this.SexotextBox.Size = new System.Drawing.Size(227, 20);
-            this.SexotextBox.TabIndex = 13;
+            this.SexocomboBox.FormattingEnabled = true;
+            this.SexocomboBox.Items.AddRange(new object[] {
+            "Mujer",
+            "Hombre"});
+            this.SexocomboBox.Location = new System.Drawing.Point(18, 330);
+            this.SexocomboBox.Name = "SexocomboBox";
+            this.SexocomboBox.Size = new System.Drawing.Size(227, 21);
+            this.SexocomboBox.TabIndex = 13;
             // 
             // Buscarbutton
             // 
@@ -220,6 +224,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
             this.Buscarbutton.TabIndex = 12;
             this.Buscarbutton.Text = "Buscar";
             this.Buscarbutton.UseVisualStyleBackColor = true;
+            this.Buscarbutton.Click += new System.EventHandler(this.Buscarbutton_Click);
             // 
             // BalancetextBox
             // 
@@ -333,6 +338,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
             this.button1.Text = "Eliminar";
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // MyErrorProvider
             // 
@@ -360,11 +366,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
 
         }
 
-        private void Guardarbutton_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
+       
         #endregion
 
         private System.Windows.Forms.Panel panel1;
@@ -395,6 +397,6 @@ namespace ResgistroDeEstudiantes.UI.Registros
         private System.Windows.Forms.Button Guardarbutton;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ErrorProvider MyErrorProvider;
-        private System.Windows.Forms.TextBox SexotextBox;
+        private System.Windows.Forms.ComboBox SexocomboBox;
     }
 }
