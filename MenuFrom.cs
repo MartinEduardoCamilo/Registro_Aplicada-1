@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ResgistroDeEstudiantes.UI.Registros;
+using ResgistroDeEstudiantes.UI.Consultas;
 
 namespace ResgistroDeEstudiantes
 {
@@ -31,7 +32,8 @@ namespace ResgistroDeEstudiantes
 
         private void ConsultaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            ConsultasFrom consulta = new ConsultasFrom();
+            consulta.Show();
         }
     }
 }

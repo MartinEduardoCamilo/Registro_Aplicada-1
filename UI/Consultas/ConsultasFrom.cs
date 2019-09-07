@@ -29,13 +29,27 @@ namespace ResgistroDeEstudiantes.UI.Consultas
                     case 0:
                         Listado = EstudianteBLL.GetList(estudiante => true);
                         break;
-
                     case 1:
                         int Id = Convert.ToInt32(CriteriotextBox.Text);
                         Listado = EstudianteBLL.GetList(estudiante => estudiante.Id == Id);
                         break;
+                    case 2:
+                        Listado = EstudianteBLL.GetList(estudiante => estudiante.Matricula.Contains(CriteriotextBox.Text));
+                        break;
+                    case 3:
+                        Listado = EstudianteBLL.GetList(estudiante => estudiante.Cedula.Contains(CriteriotextBox.Text));
+                        break;
+                    case 4:
+                        Listado = EstudianteBLL.GetList(estudiante => estudiante.Sexo.Contains(CriteriotextBox.Text));
+                        break;
                 }
             }
+            else
+            {
+                Listado = EstudianteBLL.GetList(estudiante => true);
+            }
+            ConsultadataGridView.DataSource = null;
+            ConsultadataGridView.DataSource = Listado;
         }
     }
 }
