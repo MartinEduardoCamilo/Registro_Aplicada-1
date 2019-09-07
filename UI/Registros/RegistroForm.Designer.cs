@@ -199,17 +199,17 @@ namespace ResgistroDeEstudiantes.UI.Registros
             this.panel2.Controls.Add(this.NombretextBox);
             this.panel2.Controls.Add(this.MatriculamaskedTextBox);
             this.panel2.Controls.Add(this.IDnumericUpDown);
-            this.panel2.Location = new System.Drawing.Point(157, 32);
+            this.panel2.Location = new System.Drawing.Point(122, 32);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(310, 411);
+            this.panel2.Size = new System.Drawing.Size(298, 411);
             this.panel2.TabIndex = 1;
             // 
             // SexocomboBox
             // 
             this.SexocomboBox.FormattingEnabled = true;
             this.SexocomboBox.Items.AddRange(new object[] {
-            "Mujer",
-            "Hombre"});
+            "Femenino",
+            "Masculino"});
             this.SexocomboBox.Location = new System.Drawing.Point(18, 331);
             this.SexocomboBox.Name = "SexocomboBox";
             this.SexocomboBox.Size = new System.Drawing.Size(227, 21);
@@ -260,7 +260,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
             // TelefonomaskedTextBox
             // 
             this.TelefonomaskedTextBox.Location = new System.Drawing.Point(18, 188);
-            this.TelefonomaskedTextBox.Mask = "(999)000-0000";
+            this.TelefonomaskedTextBox.Mask = "000-000-0000";
             this.TelefonomaskedTextBox.Name = "TelefonomaskedTextBox";
             this.TelefonomaskedTextBox.Size = new System.Drawing.Size(227, 20);
             this.TelefonomaskedTextBox.TabIndex = 5;
@@ -306,7 +306,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
             // 
             this.Nuevobutton.Image = ((System.Drawing.Image)(resources.GetObject("Nuevobutton.Image")));
             this.Nuevobutton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Nuevobutton.Location = new System.Drawing.Point(157, 461);
+            this.Nuevobutton.Location = new System.Drawing.Point(122, 449);
             this.Nuevobutton.Name = "Nuevobutton";
             this.Nuevobutton.Size = new System.Drawing.Size(75, 63);
             this.Nuevobutton.TabIndex = 2;
@@ -319,7 +319,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
             // 
             this.Guardarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Guardarbutton.Image")));
             this.Guardarbutton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Guardarbutton.Location = new System.Drawing.Point(276, 461);
+            this.Guardarbutton.Location = new System.Drawing.Point(235, 449);
             this.Guardarbutton.Name = "Guardarbutton";
             this.Guardarbutton.Size = new System.Drawing.Size(75, 63);
             this.Guardarbutton.TabIndex = 3;
@@ -332,7 +332,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
             // 
             this.Eliminarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Eliminarbutton.Image")));
             this.Eliminarbutton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Eliminarbutton.Location = new System.Drawing.Point(392, 461);
+            this.Eliminarbutton.Location = new System.Drawing.Point(345, 449);
             this.Eliminarbutton.Name = "Eliminarbutton";
             this.Eliminarbutton.Size = new System.Drawing.Size(75, 63);
             this.Eliminarbutton.TabIndex = 4;
@@ -357,14 +357,14 @@ namespace ResgistroDeEstudiantes.UI.Registros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(483, 536);
+            this.ClientSize = new System.Drawing.Size(436, 536);
             this.Controls.Add(this.Eliminarbutton);
             this.Controls.Add(this.Guardarbutton);
             this.Controls.Add(this.Nuevobutton);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "RegistroForm";
-            this.Text = "RegistroForm";
+            this.Text = "Registro de Estudiante";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

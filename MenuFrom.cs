@@ -11,9 +11,9 @@ using ResgistroDeEstudiantes.UI.Registros;
 
 namespace ResgistroDeEstudiantes
 {
-    public partial class MainForm1 : Form
+    public partial class MenuForm : Form
     {
-        public MainForm1()
+        public MenuForm()
         {
             InitializeComponent();
         }

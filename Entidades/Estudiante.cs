@@ -10,7 +10,7 @@ namespace ResgistroDeEstudiantes.Entidades
     public class Estudiante
     {
         [Key]
-        public int EstudianteId { get; set; }
+        public int Id { get; set; }
         public string Matricula { get; set; }
         public string Nombres { get; set; }
         public string Apellidos { get; set; }
@@ -24,7 +24,7 @@ namespace ResgistroDeEstudiantes.Entidades
 
         public Estudiante()
         {
-            EstudianteId = 0;
+            Id = 0;
             Matricula = string.Empty;
             Nombres = string.Empty;
             Apellidos = string.Empty;

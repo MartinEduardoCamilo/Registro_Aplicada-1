@@ -44,7 +44,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
         private Estudiante LLenaclase()
         {
             Estudiante estudiante = new Estudiante();
-            estudiante.EstudianteId = Convert.ToInt32(IDnumericUpDown.Value);
+            estudiante.Id = Convert.ToInt32(IDnumericUpDown.Value);
             estudiante.Matricula = MatriculamaskedTextBox.Text;
             estudiante.Nombres = NombretextBox.Text;
             estudiante.Apellidos = ApellidotextBox.Text;
@@ -62,7 +62,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
 
         private void LLenaCampo(Estudiante estudiante)
         {
-            IDnumericUpDown.Value = estudiante.EstudianteId;
+            IDnumericUpDown.Value = estudiante.Id;
             MatriculamaskedTextBox.Text = estudiante.Matricula;
             NombretextBox.Text = estudiante.Nombres;
             ApellidotextBox.Text = estudiante.Apellidos;
@@ -73,6 +73,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
             FechaNacimientodateTimePicker.Value = estudiante.FechaNacimiento;
             SexocomboBox.Text = estudiante.Sexo;
             BalancetextBox.Text = estudiante.Balance;
+
         }
 
         private bool Validar()
@@ -169,7 +170,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
             if (paso)
             {
                 Limpiar();
-                MessageBox.Show("Guardado!!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Guardado!!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
@@ -206,7 +207,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
             int.TryParse(IDnumericUpDown.Text, out id);
             Limpiar();
             if (EstudianteBLL.Eliminar(id))
-                MessageBox.Show("Eliminadi", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Eliminado", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
                 MyErrorProvider.SetError(IDnumericUpDown, "No se puede eliminar a un estudiante no existente");
         }

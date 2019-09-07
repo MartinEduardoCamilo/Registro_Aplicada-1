@@ -71,11 +71,11 @@
     <Compile Include="BLL\EstudianteBLL.cs" />
     <Compile Include="DAL\Contexto.cs" />
     <Compile Include="Entidades\Estudiante.cs" />
-    <Compile Include="MainForm1.cs">
+    <Compile Include="MenuFrom.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm1.Designer.cs">
-      <DependentUpon>MainForm1.cs</DependentUpon>
+    <Compile Include="MenuFrom.Designer.cs">
+      <DependentUpon>MenuFrom.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -91,8 +91,8 @@
     <Compile Include="UI\Registros\RegistroForm.Designer.cs">
       <DependentUpon>RegistroForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="MainForm1.resx">
-      <DependentUpon>MainForm1.cs</DependentUpon>
+    <EmbeddedResource Include="MenuFrom.resx">
+      <DependentUpon>MenuFrom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -124,10 +124,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DAL\Scripts\" />
     <Folder Include="UI\Reportes\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DAL\Scripts\Scripts.sql" />
     <Content Include="Resources\new_page_document_16676.png" />
     <Content Include="Resources\savetheapplication_guardar_2958.png" />
     <Content Include="Resources\vcsconflicting_93497.png" />

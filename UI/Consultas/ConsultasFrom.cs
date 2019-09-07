@@ -32,7 +32,7 @@ namespace ResgistroDeEstudiantes.UI.Consultas
 
                     case 1:
                         int Id = Convert.ToInt32(CriteriotextBox.Text);
-                        Listado = EstudianteBLL.GetList(estudiante => estudiante.EstudianteId == Id);
+                        Listado = EstudianteBLL.GetList(estudiante => estudiante.Id == Id);
                         break;
                 }
             }
