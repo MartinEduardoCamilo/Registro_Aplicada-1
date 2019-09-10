@@ -14,5 +14,5 @@ CREATE TABLE Estudiantes
  Email varchar(20),
  FechaNacimiento date,
  Sexo varchar(9),
- Balance float (30),
+ Balance decimal (30,2),
 )

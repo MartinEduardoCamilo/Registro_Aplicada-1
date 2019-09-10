@@ -72,7 +72,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
             EmailtextBox.Text = estudiante.Email;
             FechaNacimientodateTimePicker.Value = estudiante.FechaNacimiento;
             SexocomboBox.Text = estudiante.Sexo;
-            BalancetextBox.Text = estudiante.Balance.ToString();
+            BalancetextBox.Text = Convert.ToString(estudiante.Balance);
 
         }
 
