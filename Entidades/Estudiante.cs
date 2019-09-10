@@ -20,7 +20,7 @@ namespace ResgistroDeEstudiantes.Entidades
         public string Email { get; set; }
         public DateTime FechaNacimiento { get; set; }
         public string Sexo { get; set; }
-        public string Balance { get; set; }
+        public decimal Balance { get; set; }
 
         public Estudiante()
         {
@@ -34,7 +34,7 @@ namespace ResgistroDeEstudiantes.Entidades
             Email = string.Empty;
             FechaNacimiento = DateTime.Now;
             Sexo = string.Empty;
-            Balance = string.Empty;
+            Balance = 0;
         }
     }
 }

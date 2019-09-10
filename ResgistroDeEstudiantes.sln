@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResgistroDeEstudiantes", "ResgistroDeEstudiantes.csproj", "{F09D5AFC-4226-4B9E-B281-5D4791D8897C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResgistroDeEstudiantesTests", "..\ResgistroDeEstudiantesTests\ResgistroDeEstudiantesTests.csproj", "{48D61505-AF00-4EBF-912D-3AECFA9180BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F09D5AFC-4226-4B9E-B281-5D4791D8897C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F09D5AFC-4226-4B9E-B281-5D4791D8897C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F09D5AFC-4226-4B9E-B281-5D4791D8897C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48D61505-AF00-4EBF-912D-3AECFA9180BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48D61505-AF00-4EBF-912D-3AECFA9180BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48D61505-AF00-4EBF-912D-3AECFA9180BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48D61505-AF00-4EBF-912D-3AECFA9180BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

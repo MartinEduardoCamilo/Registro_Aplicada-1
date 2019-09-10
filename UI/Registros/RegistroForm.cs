@@ -54,7 +54,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
             estudiante.Email = EmailtextBox.Text;
             estudiante.FechaNacimiento = FechaNacimientodateTimePicker.Value;
             estudiante.Sexo = SexocomboBox.Text;
-            estudiante.Balance = BalancetextBox.Text;
+            estudiante.Balance = Convert.ToDecimal(BalancetextBox.Text);
 
             return estudiante;
 
@@ -72,7 +72,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
             EmailtextBox.Text = estudiante.Email;
             FechaNacimientodateTimePicker.Value = estudiante.FechaNacimiento;
             SexocomboBox.Text = estudiante.Sexo;
-            BalancetextBox.Text = estudiante.Balance;
+            BalancetextBox.Text = estudiante.Balance.ToString();
 
         }
 
