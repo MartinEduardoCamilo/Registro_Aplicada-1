@@ -44,7 +44,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
         private Estudiante LLenaclase()
         {
             Estudiante estudiante = new Estudiante();
-            estudiante.Id = Convert.ToInt32(IDnumericUpDown.Value);
+            estudiante.EstudianteID = Convert.ToInt32(IDnumericUpDown.Value);
             estudiante.Matricula = MatriculamaskedTextBox.Text;
             estudiante.Nombres = NombretextBox.Text;
             estudiante.Apellidos = ApellidotextBox.Text;
@@ -54,7 +54,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
             estudiante.Email = EmailtextBox.Text;
             estudiante.FechaNacimiento = FechaNacimientodateTimePicker.Value;
             estudiante.Sexo = SexocomboBox.Text;
-            estudiante.Balance = Convert.ToDecimal(BalancetextBox.Text);
+            estudiante.Balance = Convert.ToSingle(BalancetextBox.Text);
 
             return estudiante;
 
@@ -62,7 +62,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
 
         private void LLenaCampo(Estudiante estudiante)
         {
-            IDnumericUpDown.Value = estudiante.Id;
+            IDnumericUpDown.Value = estudiante.EstudianteID;
             MatriculamaskedTextBox.Text = estudiante.Matricula;
             NombretextBox.Text = estudiante.Nombres;
             ApellidotextBox.Text = estudiante.Apellidos;
@@ -118,7 +118,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
 
             if(string.IsNullOrWhiteSpace(ApellidotextBox.Text))
             {
-                MyErrorProvider.SetError(ApellidotextBox, "El campo no debe estar vacio");
+                MyErrorProvider.SetError(ApellidotextBox, "El campo apellido no debe estar vacio");
                 ApellidotextBox.Focus();
                 paso = false;
             }
@@ -132,7 +132,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
 
             if (string.IsNullOrWhiteSpace(BalancetextBox.Text))
             {
-                MyErrorProvider.SetError(BalancetextBox, "El balance Email no debe estar Vacio");
+                MyErrorProvider.SetError(BalancetextBox, "El balance no debe estar Vacio");
                 BalancetextBox.Focus();
                 paso = false;
             }
@@ -212,6 +212,9 @@ namespace ResgistroDeEstudiantes.UI.Registros
                 MyErrorProvider.SetError(IDnumericUpDown, "No se puede eliminar a un estudiante no existente");
         }
 
-        
+        private void RegistroForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -10,7 +10,7 @@ namespace ResgistroDeEstudiantes.Entidades
     public class Estudiante
     {
         [Key]
-        public int Id { get; set; }
+        public int EstudianteID { get; set; }
         public string Matricula { get; set; }
         public string Nombres { get; set; }
         public string Apellidos { get; set; }
@@ -20,11 +20,11 @@ namespace ResgistroDeEstudiantes.Entidades
         public string Email { get; set; }
         public DateTime FechaNacimiento { get; set; }
         public string Sexo { get; set; }
-        public decimal Balance { get; set; }
+        public float Balance { get; set; }
 
         public Estudiante()
         {
-            Id = 0;
+            EstudianteID = 0;
             Matricula = string.Empty;
             Nombres = string.Empty;
             Apellidos = string.Empty;
@@ -34,7 +34,7 @@ namespace ResgistroDeEstudiantes.Entidades
             Email = string.Empty;
             FechaNacimiento = DateTime.Now;
             Sexo = string.Empty;
-            Balance = 0;
+            Balance = 0.0f;
         }
     }
 }

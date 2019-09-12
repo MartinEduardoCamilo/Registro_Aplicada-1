@@ -4,7 +4,7 @@ USE Estudiantedb
 GO
 CREATE TABLE Estudiantes
 (
- Id  int primary key identity(1,1),
+ EstudianteID  int primary key identity,
  Matricula  varchar(9),
  Nombres varchar(15),
  Apellidos Varchar(15),
@@ -14,5 +14,16 @@ CREATE TABLE Estudiantes
  Email varchar(20),
  FechaNacimiento date,
  Sexo varchar(9),
- Balance decimal (30,2),
+ Balance float (30,2),
+)
+GO
+CREATE TABLE Inscripciones
+(
+	InscripcionID int primary key identity,
+	Fecha date,
+	EstudianteID  int primary Key identity,
+	Conetario varchar(40),
+	Monto float(10,2),
+	Deposito float(10,2),
+	Balance float(10,2),
 )

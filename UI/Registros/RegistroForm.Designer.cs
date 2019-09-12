@@ -62,10 +62,12 @@ namespace ResgistroDeEstudiantes.UI.Registros
             this.Eliminarbutton = new System.Windows.Forms.Button();
             this.MyErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.entityCommand1 = new System.Data.Entity.Core.EntityClient.EntityCommand();
+            this.MyError = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IDnumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MyError)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -293,7 +295,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
             this.MatriculamaskedTextBox.Mask = "0000-0000";
             this.MatriculamaskedTextBox.Name = "MatriculamaskedTextBox";
             this.MatriculamaskedTextBox.Size = new System.Drawing.Size(227, 20);
-            this.MatriculamaskedTextBox.TabIndex = 1;
+            this.MatriculamaskedTextBox.TabIndex = 2;
             // 
             // IDnumericUpDown
             // 
@@ -353,6 +355,10 @@ namespace ResgistroDeEstudiantes.UI.Registros
             this.entityCommand1.EnablePlanCaching = true;
             this.entityCommand1.Transaction = null;
             // 
+            // MyError
+            // 
+            this.MyError.ContainerControl = this;
+            // 
             // RegistroForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -365,12 +371,14 @@ namespace ResgistroDeEstudiantes.UI.Registros
             this.Controls.Add(this.panel1);
             this.Name = "RegistroForm";
             this.Text = "Registro de Estudiante";
+            this.Load += new System.EventHandler(this.RegistroForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IDnumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MyError)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -410,6 +418,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
         private System.Windows.Forms.ErrorProvider MyErrorProvider;
         private System.Windows.Forms.ComboBox SexocomboBox;
         private System.Data.Entity.Core.EntityClient.EntityCommand entityCommand1;
+        private System.Windows.Forms.ErrorProvider MyError;
 
         public EventHandler SexotextBox_TextChanged { get; private set; }
     }
