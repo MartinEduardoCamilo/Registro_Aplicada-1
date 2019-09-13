@@ -233,8 +233,10 @@ namespace ResgistroDeEstudiantes.UI.Registros
             // 
             this.BalancetextBox.Location = new System.Drawing.Point(18, 364);
             this.BalancetextBox.Name = "BalancetextBox";
+            this.BalancetextBox.ReadOnly = true;
             this.BalancetextBox.Size = new System.Drawing.Size(227, 20);
             this.BalancetextBox.TabIndex = 11;
+            this.BalancetextBox.TextChanged += new System.EventHandler(this.BalancetextBox_TextChanged);
             // 
             // FechaNacimientodateTimePicker
             // 
@@ -403,7 +405,6 @@ namespace ResgistroDeEstudiantes.UI.Registros
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.NumericUpDown IDnumericUpDown;
         private System.Windows.Forms.Button Buscarbutton;
-        private System.Windows.Forms.TextBox BalancetextBox;
         private System.Windows.Forms.DateTimePicker FechaNacimientodateTimePicker;
         private System.Windows.Forms.TextBox EmailtextBox;
         private System.Windows.Forms.MaskedTextBox CelularmaskedTextBox;
@@ -419,6 +420,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
         private System.Windows.Forms.ComboBox SexocomboBox;
         private System.Data.Entity.Core.EntityClient.EntityCommand entityCommand1;
         private System.Windows.Forms.ErrorProvider MyError;
+        public System.Windows.Forms.TextBox BalancetextBox;
 
         public EventHandler SexotextBox_TextChanged { get; private set; }
     }

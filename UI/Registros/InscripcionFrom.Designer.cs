@@ -75,7 +75,7 @@
             // Balancelabel
             // 
             this.Balancelabel.AutoSize = true;
-            this.Balancelabel.Location = new System.Drawing.Point(4, 276);
+            this.Balancelabel.Location = new System.Drawing.Point(7, 235);
             this.Balancelabel.Name = "Balancelabel";
             this.Balancelabel.Size = new System.Drawing.Size(46, 13);
             this.Balancelabel.TabIndex = 6;
@@ -84,7 +84,7 @@
             // Montolabel
             // 
             this.Montolabel.AutoSize = true;
-            this.Montolabel.Location = new System.Drawing.Point(4, 208);
+            this.Montolabel.Location = new System.Drawing.Point(4, 158);
             this.Montolabel.Name = "Montolabel";
             this.Montolabel.Size = new System.Drawing.Size(37, 13);
             this.Montolabel.TabIndex = 5;
@@ -93,7 +93,7 @@
             // Depositolabel
             // 
             this.Depositolabel.AutoSize = true;
-            this.Depositolabel.Location = new System.Drawing.Point(4, 248);
+            this.Depositolabel.Location = new System.Drawing.Point(4, 198);
             this.Depositolabel.Name = "Depositolabel";
             this.Depositolabel.Size = new System.Drawing.Size(49, 13);
             this.Depositolabel.TabIndex = 4;
@@ -102,7 +102,7 @@
             // Comentariolabel
             // 
             this.Comentariolabel.AutoSize = true;
-            this.Comentariolabel.Location = new System.Drawing.Point(4, 171);
+            this.Comentariolabel.Location = new System.Drawing.Point(4, 280);
             this.Comentariolabel.Name = "Comentariolabel";
             this.Comentariolabel.Size = new System.Drawing.Size(60, 13);
             this.Comentariolabel.TabIndex = 3;
@@ -160,36 +160,38 @@
             this.Buscarbutton.TabIndex = 7;
             this.Buscarbutton.Text = "Buscar";
             this.Buscarbutton.UseVisualStyleBackColor = true;
+            this.Buscarbutton.Click += new System.EventHandler(this.Buscarbutton_Click_1);
             // 
             // BalancetextBox
             // 
-            this.BalancetextBox.Location = new System.Drawing.Point(4, 270);
+            this.BalancetextBox.Location = new System.Drawing.Point(4, 229);
             this.BalancetextBox.Name = "BalancetextBox";
             this.BalancetextBox.ReadOnly = true;
             this.BalancetextBox.Size = new System.Drawing.Size(193, 20);
-            this.BalancetextBox.TabIndex = 6;
+            this.BalancetextBox.TabIndex = 5;
             // 
             // MontotextBox
             // 
-            this.MontotextBox.Location = new System.Drawing.Point(4, 206);
+            this.MontotextBox.Location = new System.Drawing.Point(4, 152);
             this.MontotextBox.Name = "MontotextBox";
             this.MontotextBox.Size = new System.Drawing.Size(193, 20);
-            this.MontotextBox.TabIndex = 5;
+            this.MontotextBox.TabIndex = 3;
             // 
             // DepositotextBox
             // 
-            this.DepositotextBox.Location = new System.Drawing.Point(4, 242);
+            this.DepositotextBox.Location = new System.Drawing.Point(4, 192);
             this.DepositotextBox.Name = "DepositotextBox";
             this.DepositotextBox.Size = new System.Drawing.Size(193, 20);
             this.DepositotextBox.TabIndex = 4;
+           
             // 
             // ComentariotextBox
             // 
-            this.ComentariotextBox.Location = new System.Drawing.Point(4, 163);
+            this.ComentariotextBox.Location = new System.Drawing.Point(4, 272);
             this.ComentariotextBox.Multiline = true;
             this.ComentariotextBox.Name = "ComentariotextBox";
             this.ComentariotextBox.Size = new System.Drawing.Size(193, 22);
-            this.ComentariotextBox.TabIndex = 3;
+            this.ComentariotextBox.TabIndex = 6;
             // 
             // EstudianteIDnumericUpDown
             // 
@@ -223,6 +225,7 @@
             this.Nuevobutton.Text = "Nuevo";
             this.Nuevobutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Nuevobutton.UseVisualStyleBackColor = true;
+            this.Nuevobutton.Click += new System.EventHandler(this.Nuevobutton_Click_1);
             // 
             // Guardarbutton
             // 
@@ -234,6 +237,7 @@
             this.Guardarbutton.Text = "Guardar";
             this.Guardarbutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Guardarbutton.UseVisualStyleBackColor = true;
+            this.Guardarbutton.Click += new System.EventHandler(this.Guardarbutton_Click_1);
             // 
             // Eliminarbutton
             // 
@@ -245,6 +249,7 @@
             this.Eliminarbutton.Text = "Eliminar";
             this.Eliminarbutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Eliminarbutton.UseVisualStyleBackColor = true;
+            this.Eliminarbutton.Click += new System.EventHandler(this.Eliminarbutton_Click_1);
             // 
             // MyError
             // 

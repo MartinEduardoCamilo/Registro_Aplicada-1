@@ -13,20 +13,20 @@ namespace ResgistroDeEstudiantes.Entidades
         public int InscripcionID { get; set; }
         public DateTime Fecha { get; set; }
         public int EstudianteID { get; set; }
+        public decimal Monto { get; set; }
+        public decimal Deposito { get; set; }
+        public decimal Balance { get; set; }
         public string Comentario { get; set; }
-        public float Monto { get; set; }
-        public float Deposito { get; set; }
-        public float Balance { get; set; }
 
         public Inscripcion()
         {
             InscripcionID = 0;
             Fecha = DateTime.Now;
             EstudianteID = 0;
+            Monto = 0;
+            Deposito = 0;
+            Balance = 0;
             Comentario = string.Empty;
-            Monto = 0.0f;
-            Deposito = 0.0f;
-            Balance = 0.0f;
         }
     }
 }

@@ -35,5 +35,11 @@ namespace ResgistroDeEstudiantes
             ConsultasFrom consulta = new ConsultasFrom();
             consulta.Show();
         }
+
+        private void RegistroDeInscripcionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            InscripcionFrom inscripcion = new InscripcionFrom();
+            inscripcion.Show();
+        }
     }
 }

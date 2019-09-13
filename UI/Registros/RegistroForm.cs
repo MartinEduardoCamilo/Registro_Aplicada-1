@@ -44,6 +44,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
         private Estudiante LLenaclase()
         {
             Estudiante estudiante = new Estudiante();
+            Inscripcion inscripcion = new Inscripcion();
             estudiante.EstudianteID = Convert.ToInt32(IDnumericUpDown.Value);
             estudiante.Matricula = MatriculamaskedTextBox.Text;
             estudiante.Nombres = NombretextBox.Text;
@@ -54,13 +55,13 @@ namespace ResgistroDeEstudiantes.UI.Registros
             estudiante.Email = EmailtextBox.Text;
             estudiante.FechaNacimiento = FechaNacimientodateTimePicker.Value;
             estudiante.Sexo = SexocomboBox.Text;
-            estudiante.Balance = Convert.ToSingle(BalancetextBox.Text);
+            estudiante.Balance = inscripcion.Balance;
 
             return estudiante;
 
         }
 
-        private void LLenaCampo(Estudiante estudiante)
+        private void LLenaCampo(Estudiante estudiante, Inscripcion inscripcion)
         {
             IDnumericUpDown.Value = estudiante.EstudianteID;
             MatriculamaskedTextBox.Text = estudiante.Matricula;
@@ -72,7 +73,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
             EmailtextBox.Text = estudiante.Email;
             FechaNacimientodateTimePicker.Value = estudiante.FechaNacimiento;
             SexocomboBox.Text = estudiante.Sexo;
-            BalancetextBox.Text = Convert.ToString(estudiante.Balance);
+            BalancetextBox.Text = estudiante.Balance.ToString();
 
         }
 
@@ -130,12 +131,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
                 paso = false;
             }
 
-            if (string.IsNullOrWhiteSpace(BalancetextBox.Text))
-            {
-                MyErrorProvider.SetError(BalancetextBox, "El balance no debe estar Vacio");
-                BalancetextBox.Focus();
-                paso = false;
-            }
+           
             return paso;
         }
 
@@ -159,7 +155,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
                 paso = BLL.EstudianteBLL.Guardar(estudiante);
             else
             {
-                if (ExiteBaseDato()) 
+                if (!ExiteBaseDato()) 
                 {
                     MessageBox.Show("No se puede modificar un que estudiante exite", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -182,6 +178,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
         {
             int id;
             Estudiante estudiante = new Estudiante();
+            Inscripcion inscripcion = new Inscripcion();
             int.TryParse(IDnumericUpDown.Text, out id);
 
             Limpiar();
@@ -191,7 +188,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
             if(estudiante != null)
             {
                 MessageBox.Show("Estudiante encontrado");
-                LLenaCampo(estudiante);
+                LLenaCampo(estudiante,inscripcion);
             }
             else
             {
@@ -213,6 +210,11 @@ namespace ResgistroDeEstudiantes.UI.Registros
         }
 
         private void RegistroForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BalancetextBox_TextChanged(object sender, EventArgs e)
         {
 
         }
