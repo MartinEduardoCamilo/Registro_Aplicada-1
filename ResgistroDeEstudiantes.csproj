@@ -164,5 +164,11 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ResgistroDeEstudiantesTests\ResgistroDeEstudiantesTests.csproj">
+      <Project>{48d61505-af00-4ebf-912d-3aecfa9180be}</Project>
+      <Name>ResgistroDeEstudiantesTests</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
