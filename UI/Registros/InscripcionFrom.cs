@@ -48,10 +48,10 @@ namespace ResgistroDeEstudiantes.UI.Registros
 
         }
 
-        private void LLenaCampo(Inscripcion inscripcion)
+        private void LLenaCampo(Inscripcion inscripcion,Estudiante estudiante)
         {
             IncripcionIDnumericUpDown.Value = inscripcion.InscripcionID;
-            EstudianteIDnumericUpDown.Value = inscripcion.EstudianteID;
+            EstudianteIDnumericUpDown.Value = estudiante.EstudianteID;
             FechadateTimePicker.Value = inscripcion.Fecha;            
             MontotextBox.Text = inscripcion.Monto.ToString();
             DepositotextBox.Text = inscripcion.Deposito.ToString();
@@ -127,6 +127,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
                 }
 
                 estudiante = db.Estudiante.Find(Convert.ToInt32(EstudianteIDnumericUpDown.Value));
+                estudiante.Balance = inscripcion.Balance;
 
                 paso = InscripcionBLL.Modificar(inscripcion);
                 paso = EstudianteBLL.Modificar(estudiante);
@@ -149,8 +150,9 @@ namespace ResgistroDeEstudiantes.UI.Registros
             MyError.Clear();
             int id;
             int.TryParse(IncripcionIDnumericUpDown.Text, out id);
+            int.TryParse(EstudianteIDnumericUpDown.Text, out id);
             Limpiar();
-            if (InscripcionBLL.Eliminar(id))
+            if (InscripcionBLL.Eliminar(id) || EstudianteBLL.Eliminar(id))
                 MessageBox.Show("Eliminado", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
                 MyError.SetError(IncripcionIDnumericUpDown, "No se puede eliminar a un estudiante no existente");
@@ -160,16 +162,19 @@ namespace ResgistroDeEstudiantes.UI.Registros
         {
             int id;
             Inscripcion inscripcion = new Inscripcion();
+            Estudiante estudiante = new Estudiante();
             int.TryParse(IncripcionIDnumericUpDown.Text, out id);
+            int.TryParse(EstudianteIDnumericUpDown.Text, out id);
 
             Limpiar();
 
             inscripcion = InscripcionBLL.Buscar(id);
+            estudiante = EstudianteBLL.Buscar(id);
 
-            if (inscripcion != null)
+            if (inscripcion != null && estudiante != null)
             {
                 MessageBox.Show("Encontrado");
-                LLenaCampo(inscripcion);
+                LLenaCampo(inscripcion,estudiante);
             }
             else
             {

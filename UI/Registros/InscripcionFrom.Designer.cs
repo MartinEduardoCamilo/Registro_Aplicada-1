@@ -69,13 +69,13 @@
             this.panel1.Controls.Add(this.IncripcionIdlabel);
             this.panel1.Location = new System.Drawing.Point(13, 13);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(77, 317);
+            this.panel1.Size = new System.Drawing.Size(77, 302);
             this.panel1.TabIndex = 0;
             // 
             // Balancelabel
             // 
             this.Balancelabel.AutoSize = true;
-            this.Balancelabel.Location = new System.Drawing.Point(7, 235);
+            this.Balancelabel.Location = new System.Drawing.Point(4, 228);
             this.Balancelabel.Name = "Balancelabel";
             this.Balancelabel.Size = new System.Drawing.Size(46, 13);
             this.Balancelabel.TabIndex = 6;
@@ -84,7 +84,7 @@
             // Montolabel
             // 
             this.Montolabel.AutoSize = true;
-            this.Montolabel.Location = new System.Drawing.Point(4, 158);
+            this.Montolabel.Location = new System.Drawing.Point(4, 142);
             this.Montolabel.Name = "Montolabel";
             this.Montolabel.Size = new System.Drawing.Size(37, 13);
             this.Montolabel.TabIndex = 5;
@@ -93,7 +93,7 @@
             // Depositolabel
             // 
             this.Depositolabel.AutoSize = true;
-            this.Depositolabel.Location = new System.Drawing.Point(4, 198);
+            this.Depositolabel.Location = new System.Drawing.Point(4, 182);
             this.Depositolabel.Name = "Depositolabel";
             this.Depositolabel.Size = new System.Drawing.Size(49, 13);
             this.Depositolabel.TabIndex = 4;
@@ -102,7 +102,7 @@
             // Comentariolabel
             // 
             this.Comentariolabel.AutoSize = true;
-            this.Comentariolabel.Location = new System.Drawing.Point(4, 280);
+            this.Comentariolabel.Location = new System.Drawing.Point(4, 271);
             this.Comentariolabel.Name = "Comentariolabel";
             this.Comentariolabel.Size = new System.Drawing.Size(60, 13);
             this.Comentariolabel.TabIndex = 3;
@@ -111,7 +111,7 @@
             // EstudianteIDlabel
             // 
             this.EstudianteIDlabel.AutoSize = true;
-            this.EstudianteIDlabel.Location = new System.Drawing.Point(4, 117);
+            this.EstudianteIDlabel.Location = new System.Drawing.Point(4, 57);
             this.EstudianteIDlabel.Name = "EstudianteIDlabel";
             this.EstudianteIDlabel.Size = new System.Drawing.Size(71, 13);
             this.EstudianteIDlabel.TabIndex = 2;
@@ -120,7 +120,7 @@
             // Fechalabel
             // 
             this.Fechalabel.AutoSize = true;
-            this.Fechalabel.Location = new System.Drawing.Point(4, 70);
+            this.Fechalabel.Location = new System.Drawing.Point(4, 102);
             this.Fechalabel.Name = "Fechalabel";
             this.Fechalabel.Size = new System.Drawing.Size(37, 13);
             this.Fechalabel.TabIndex = 1;
@@ -147,14 +147,14 @@
             this.panel2.Controls.Add(this.IncripcionIDnumericUpDown);
             this.panel2.Location = new System.Drawing.Point(96, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(288, 318);
+            this.panel2.Size = new System.Drawing.Size(264, 303);
             this.panel2.TabIndex = 1;
             // 
             // Buscarbutton
             // 
             this.Buscarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Buscarbutton.Image")));
             this.Buscarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Buscarbutton.Location = new System.Drawing.Point(169, 4);
+            this.Buscarbutton.Location = new System.Drawing.Point(143, 7);
             this.Buscarbutton.Name = "Buscarbutton";
             this.Buscarbutton.Size = new System.Drawing.Size(116, 42);
             this.Buscarbutton.TabIndex = 7;
@@ -164,38 +164,37 @@
             // 
             // BalancetextBox
             // 
-            this.BalancetextBox.Location = new System.Drawing.Point(4, 229);
+            this.BalancetextBox.Location = new System.Drawing.Point(4, 222);
             this.BalancetextBox.Name = "BalancetextBox";
             this.BalancetextBox.ReadOnly = true;
-            this.BalancetextBox.Size = new System.Drawing.Size(193, 20);
+            this.BalancetextBox.Size = new System.Drawing.Size(255, 20);
             this.BalancetextBox.TabIndex = 5;
             // 
             // MontotextBox
             // 
-            this.MontotextBox.Location = new System.Drawing.Point(4, 152);
+            this.MontotextBox.Location = new System.Drawing.Point(4, 136);
             this.MontotextBox.Name = "MontotextBox";
-            this.MontotextBox.Size = new System.Drawing.Size(193, 20);
+            this.MontotextBox.Size = new System.Drawing.Size(255, 20);
             this.MontotextBox.TabIndex = 3;
             // 
             // DepositotextBox
             // 
-            this.DepositotextBox.Location = new System.Drawing.Point(4, 192);
+            this.DepositotextBox.Location = new System.Drawing.Point(4, 176);
             this.DepositotextBox.Name = "DepositotextBox";
-            this.DepositotextBox.Size = new System.Drawing.Size(193, 20);
+            this.DepositotextBox.Size = new System.Drawing.Size(255, 20);
             this.DepositotextBox.TabIndex = 4;
-           
             // 
             // ComentariotextBox
             // 
-            this.ComentariotextBox.Location = new System.Drawing.Point(4, 272);
+            this.ComentariotextBox.Location = new System.Drawing.Point(4, 263);
             this.ComentariotextBox.Multiline = true;
             this.ComentariotextBox.Name = "ComentariotextBox";
-            this.ComentariotextBox.Size = new System.Drawing.Size(193, 22);
+            this.ComentariotextBox.Size = new System.Drawing.Size(255, 22);
             this.ComentariotextBox.TabIndex = 6;
             // 
             // EstudianteIDnumericUpDown
             // 
-            this.EstudianteIDnumericUpDown.Location = new System.Drawing.Point(4, 109);
+            this.EstudianteIDnumericUpDown.Location = new System.Drawing.Point(4, 51);
             this.EstudianteIDnumericUpDown.Name = "EstudianteIDnumericUpDown";
             this.EstudianteIDnumericUpDown.Size = new System.Drawing.Size(120, 20);
             this.EstudianteIDnumericUpDown.TabIndex = 2;
@@ -203,9 +202,9 @@
             // FechadateTimePicker
             // 
             this.FechadateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.FechadateTimePicker.Location = new System.Drawing.Point(4, 62);
+            this.FechadateTimePicker.Location = new System.Drawing.Point(4, 96);
             this.FechadateTimePicker.Name = "FechadateTimePicker";
-            this.FechadateTimePicker.Size = new System.Drawing.Size(193, 20);
+            this.FechadateTimePicker.Size = new System.Drawing.Size(255, 20);
             this.FechadateTimePicker.TabIndex = 1;
             // 
             // IncripcionIDnumericUpDown
@@ -218,7 +217,7 @@
             // Nuevobutton
             // 
             this.Nuevobutton.Image = ((System.Drawing.Image)(resources.GetObject("Nuevobutton.Image")));
-            this.Nuevobutton.Location = new System.Drawing.Point(96, 336);
+            this.Nuevobutton.Location = new System.Drawing.Point(96, 321);
             this.Nuevobutton.Name = "Nuevobutton";
             this.Nuevobutton.Size = new System.Drawing.Size(75, 76);
             this.Nuevobutton.TabIndex = 2;
@@ -230,7 +229,7 @@
             // Guardarbutton
             // 
             this.Guardarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Guardarbutton.Image")));
-            this.Guardarbutton.Location = new System.Drawing.Point(201, 336);
+            this.Guardarbutton.Location = new System.Drawing.Point(190, 321);
             this.Guardarbutton.Name = "Guardarbutton";
             this.Guardarbutton.Size = new System.Drawing.Size(75, 76);
             this.Guardarbutton.TabIndex = 3;
@@ -242,7 +241,7 @@
             // Eliminarbutton
             // 
             this.Eliminarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Eliminarbutton.Image")));
-            this.Eliminarbutton.Location = new System.Drawing.Point(309, 336);
+            this.Eliminarbutton.Location = new System.Drawing.Point(285, 321);
             this.Eliminarbutton.Name = "Eliminarbutton";
             this.Eliminarbutton.Size = new System.Drawing.Size(75, 76);
             this.Eliminarbutton.TabIndex = 4;
@@ -259,14 +258,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(398, 423);
+            this.ClientSize = new System.Drawing.Size(369, 403);
             this.Controls.Add(this.Eliminarbutton);
             this.Controls.Add(this.Guardarbutton);
             this.Controls.Add(this.Nuevobutton);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "InscripcionFrom";
-            this.Text = "InscripcionFrom";
+            this.Text = "Registro Inscripción ";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

@@ -83,7 +83,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
             this.panel1.Controls.Add(this.Nombrelabel);
             this.panel1.Controls.Add(this.Matriculalabel);
             this.panel1.Controls.Add(this.IDlabel);
-            this.panel1.Location = new System.Drawing.Point(13, 32);
+            this.panel1.Location = new System.Drawing.Point(13, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(103, 411);
             this.panel1.TabIndex = 0;
@@ -201,9 +201,9 @@ namespace ResgistroDeEstudiantes.UI.Registros
             this.panel2.Controls.Add(this.NombretextBox);
             this.panel2.Controls.Add(this.MatriculamaskedTextBox);
             this.panel2.Controls.Add(this.IDnumericUpDown);
-            this.panel2.Location = new System.Drawing.Point(122, 32);
+            this.panel2.Location = new System.Drawing.Point(122, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(298, 411);
+            this.panel2.Size = new System.Drawing.Size(302, 411);
             this.panel2.TabIndex = 1;
             // 
             // SexocomboBox
@@ -214,7 +214,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
             "Masculino"});
             this.SexocomboBox.Location = new System.Drawing.Point(18, 331);
             this.SexocomboBox.Name = "SexocomboBox";
-            this.SexocomboBox.Size = new System.Drawing.Size(227, 21);
+            this.SexocomboBox.Size = new System.Drawing.Size(280, 21);
             this.SexocomboBox.TabIndex = 13;
             // 
             // Buscarbutton
@@ -234,7 +234,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
             this.BalancetextBox.Location = new System.Drawing.Point(18, 364);
             this.BalancetextBox.Name = "BalancetextBox";
             this.BalancetextBox.ReadOnly = true;
-            this.BalancetextBox.Size = new System.Drawing.Size(227, 20);
+            this.BalancetextBox.Size = new System.Drawing.Size(280, 20);
             this.BalancetextBox.TabIndex = 11;
             this.BalancetextBox.TextChanged += new System.EventHandler(this.BalancetextBox_TextChanged);
             // 
@@ -243,14 +243,14 @@ namespace ResgistroDeEstudiantes.UI.Registros
             this.FechaNacimientodateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.FechaNacimientodateTimePicker.Location = new System.Drawing.Point(18, 293);
             this.FechaNacimientodateTimePicker.Name = "FechaNacimientodateTimePicker";
-            this.FechaNacimientodateTimePicker.Size = new System.Drawing.Size(227, 20);
+            this.FechaNacimientodateTimePicker.Size = new System.Drawing.Size(280, 20);
             this.FechaNacimientodateTimePicker.TabIndex = 8;
             // 
             // EmailtextBox
             // 
             this.EmailtextBox.Location = new System.Drawing.Point(18, 259);
             this.EmailtextBox.Name = "EmailtextBox";
-            this.EmailtextBox.Size = new System.Drawing.Size(227, 20);
+            this.EmailtextBox.Size = new System.Drawing.Size(280, 20);
             this.EmailtextBox.TabIndex = 7;
             // 
             // CelularmaskedTextBox
@@ -258,7 +258,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
             this.CelularmaskedTextBox.Location = new System.Drawing.Point(18, 227);
             this.CelularmaskedTextBox.Mask = "000-000-0000";
             this.CelularmaskedTextBox.Name = "CelularmaskedTextBox";
-            this.CelularmaskedTextBox.Size = new System.Drawing.Size(227, 20);
+            this.CelularmaskedTextBox.Size = new System.Drawing.Size(280, 20);
             this.CelularmaskedTextBox.TabIndex = 6;
             // 
             // TelefonomaskedTextBox
@@ -266,7 +266,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
             this.TelefonomaskedTextBox.Location = new System.Drawing.Point(18, 188);
             this.TelefonomaskedTextBox.Mask = "000-000-0000";
             this.TelefonomaskedTextBox.Name = "TelefonomaskedTextBox";
-            this.TelefonomaskedTextBox.Size = new System.Drawing.Size(227, 20);
+            this.TelefonomaskedTextBox.Size = new System.Drawing.Size(280, 20);
             this.TelefonomaskedTextBox.TabIndex = 5;
             // 
             // CedulamaskedTextBox
@@ -274,21 +274,21 @@ namespace ResgistroDeEstudiantes.UI.Registros
             this.CedulamaskedTextBox.Location = new System.Drawing.Point(18, 155);
             this.CedulamaskedTextBox.Mask = "000-0000000-0";
             this.CedulamaskedTextBox.Name = "CedulamaskedTextBox";
-            this.CedulamaskedTextBox.Size = new System.Drawing.Size(227, 20);
+            this.CedulamaskedTextBox.Size = new System.Drawing.Size(280, 20);
             this.CedulamaskedTextBox.TabIndex = 4;
             // 
             // ApellidotextBox
             // 
             this.ApellidotextBox.Location = new System.Drawing.Point(18, 124);
             this.ApellidotextBox.Name = "ApellidotextBox";
-            this.ApellidotextBox.Size = new System.Drawing.Size(227, 20);
+            this.ApellidotextBox.Size = new System.Drawing.Size(280, 20);
             this.ApellidotextBox.TabIndex = 3;
             // 
             // NombretextBox
             // 
             this.NombretextBox.Location = new System.Drawing.Point(18, 95);
             this.NombretextBox.Name = "NombretextBox";
-            this.NombretextBox.Size = new System.Drawing.Size(227, 20);
+            this.NombretextBox.Size = new System.Drawing.Size(280, 20);
             this.NombretextBox.TabIndex = 2;
             // 
             // MatriculamaskedTextBox
@@ -296,7 +296,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
             this.MatriculamaskedTextBox.Location = new System.Drawing.Point(18, 65);
             this.MatriculamaskedTextBox.Mask = "0000-0000";
             this.MatriculamaskedTextBox.Name = "MatriculamaskedTextBox";
-            this.MatriculamaskedTextBox.Size = new System.Drawing.Size(227, 20);
+            this.MatriculamaskedTextBox.Size = new System.Drawing.Size(280, 20);
             this.MatriculamaskedTextBox.TabIndex = 2;
             // 
             // IDnumericUpDown
@@ -310,7 +310,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
             // 
             this.Nuevobutton.Image = ((System.Drawing.Image)(resources.GetObject("Nuevobutton.Image")));
             this.Nuevobutton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Nuevobutton.Location = new System.Drawing.Point(122, 449);
+            this.Nuevobutton.Location = new System.Drawing.Point(122, 429);
             this.Nuevobutton.Name = "Nuevobutton";
             this.Nuevobutton.Size = new System.Drawing.Size(75, 63);
             this.Nuevobutton.TabIndex = 2;
@@ -323,7 +323,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
             // 
             this.Guardarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Guardarbutton.Image")));
             this.Guardarbutton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Guardarbutton.Location = new System.Drawing.Point(235, 449);
+            this.Guardarbutton.Location = new System.Drawing.Point(233, 429);
             this.Guardarbutton.Name = "Guardarbutton";
             this.Guardarbutton.Size = new System.Drawing.Size(75, 63);
             this.Guardarbutton.TabIndex = 3;
@@ -336,7 +336,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
             // 
             this.Eliminarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Eliminarbutton.Image")));
             this.Eliminarbutton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Eliminarbutton.Location = new System.Drawing.Point(345, 449);
+            this.Eliminarbutton.Location = new System.Drawing.Point(345, 429);
             this.Eliminarbutton.Name = "Eliminarbutton";
             this.Eliminarbutton.Size = new System.Drawing.Size(75, 63);
             this.Eliminarbutton.TabIndex = 4;
@@ -365,7 +365,7 @@ namespace ResgistroDeEstudiantes.UI.Registros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(436, 536);
+            this.ClientSize = new System.Drawing.Size(436, 502);
             this.Controls.Add(this.Eliminarbutton);
             this.Controls.Add(this.Guardarbutton);
             this.Controls.Add(this.Nuevobutton);

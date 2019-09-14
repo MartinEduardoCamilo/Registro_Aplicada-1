@@ -14,7 +14,7 @@ CREATE TABLE Estudiantes
  Email varchar(20),
  FechaNacimiento date,
  Sexo varchar(9),
- Balance decimal (30),
+ Balance decimal (30,2),
 )
 GO
 CREATE TABLE Inscripcions
@@ -23,7 +23,7 @@ CREATE TABLE Inscripcions
 	Fecha date,
 	EstudianteID  int,
 	Monto decimal(10),
-	Deposito decimal(10),
-	Balance decimal(10),
+	Deposito decimal(10,2),
+	Balance decimal(10,2),
 	Comentario varchar(40),
 )
